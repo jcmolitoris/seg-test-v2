@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitars Collection | Axe & Amp Guitars</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              amber: '#E67E22',
+              dark: '#0D0E11',
+              card: '#16181E',
+              border: '#2A2D37'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- ================================================================= -->
+  <!-- INSERT YOUR SEGMENT ANALYTICS.JS SNIPPET HERE MANUALLY           -->
+  <!-- ================================================================= -->
+
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-gold selection:text-black">
+
+  <!-- Main Navigation Bar -->
+  <nav class="bg-brand-card/90 border-b border-brand-border sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-amber to-brand-gold flex items-center justify-center text-black font-serif text-xl font-bold shadow-lg shadow-brand-gold/10">
+            <i class="ph-bold ph-guitar"></i>
+          </div>
+          <div>
+            <span class="font-serif text-lg font-bold tracking-wider text-slate-100 block leading-none">AXE & AMP</span>
+            <span class="text-[10px] tracking-widest text-brand-gold font-semibold uppercase">Custom Guitars</span>
+          </div>
+        </a>
+
+        <div class="flex items-center space-x-2 sm:space-x-6 text-sm font-medium">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-slate-400 hover:text-slate-100 transition">
+            Home
+          </a>
+          <a href="collection.html" class="px-3 py-2 rounded-lg text-brand-gold bg-slate-800/80 font-semibold border border-brand-gold/30">
+            Guitars Collection
+          </a>
+          <a href="register.html" class="px-3 py-2 rounded-lg text-slate-400 hover:text-slate-100 transition">
+            Register Account
+          </a>
+        </div>
+
+        <div>
+          <a href="register.html" class="bg-brand-gold hover:bg-amber-500 text-black font-bold px-4 py-2 rounded-xl text-xs transition">
+            Join Club
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Collection Workspace -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+    
+    <!-- Page Header -->
+    <div class="border-b border-brand-border pb-6 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <h1 class="font-serif text-3xl font-bold text-slate-100">Featured Guitars Collection</h1>
+        <p class="text-xs text-slate-400 mt-1">Browse custom shop electric and acoustic models</p>
+      </div>
+      <span class="text-xs text-slate-300 bg-slate-900 px-3.5 py-1.5 rounded-full border border-brand-border">
+        2 Guitars Available
+      </span>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- PRODUCT CARD 1: Vintage '62 Stratocaster -->
+      <div class="product-card bg-brand-card border border-brand-border rounded-2xl p-6 flex flex-col justify-between space-y-6 hover:border-brand-gold/50 transition shadow-xl"
+           data-product-id="prod_strat_62"
+           data-sku="STRAT-VINTAGE-1962"
+           data-name="Vintage '62 Stratocaster"
+           data-category="Electric Guitars"
+           data-price="2499.00"
+           data-currency="USD">
+        
+        <div class="space-y-4">
+          <div class="h-56 bg-slate-950 rounded-xl flex items-center justify-center relative overflow-hidden group">
+            <i class="ph-duotone ph-guitar text-9xl text-brand-gold/70 group-hover:scale-105 transition duration-300"></i>
+            <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] px-2.5 py-1 rounded border border-brand-border font-mono">
+              SKU: STRAT-VINTAGE-1962
+            </span>
+            <span class="absolute top-3 right-3 bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded border border-emerald-500/20">
+              In Stock
+            </span>
+          </div>
+
+          <div>
+            <span class="text-[10px] uppercase tracking-wider text-brand-gold font-bold">Electric Guitars</span>
+            <h2 class="font-serif text-2xl font-bold text-slate-100 mt-0.5">Vintage '62 Stratocaster</h2>
+            <p class="text-xs text-slate-400 leading-relaxed mt-2">
+              Alder body with Nitrocellulose lacquer finish, slab rosewood fingerboard, and hand-wound '62 single-coil pickups. Delivers iconic glassy highs and warm chime.
+            </p>
+          </div>
+
+          <div class="flex items-center space-x-2 text-xs text-brand-gold">
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <span class="text-slate-400 ml-1">(5.0 / 42 reviews)</span>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex items-center justify-between">
+          <div>
+            <span class="block text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Price</span>
+            <span class="text-2xl font-bold text-brand-gold">$2,499.00</span>
+          </div>
+          <div class="flex space-x-2">
+            <button class="btn-view-details bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-4 py-2.5 rounded-xl font-medium transition"
+                    data-product-id="prod_strat_62">
+              View Details
+            </button>
+            <button class="btn-add-to-cart bg-gradient-to-r from-brand-gold to-brand-amber hover:opacity-90 text-black text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1.5 shadow-lg shadow-brand-gold/10"
+                    data-product-id="prod_strat_62"
+                    data-sku="STRAT-VINTAGE-1962"
+                    data-name="Vintage '62 Stratocaster"
+                    data-price="2499.00">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PRODUCT CARD 2: Custom Shop Les Paul -->
+      <div class="product-card bg-brand-card border border-brand-border rounded-2xl p-6 flex flex-col justify-between space-y-6 hover:border-brand-gold/50 transition shadow-xl"
+           data-product-id="prod_lespaul_custom"
+           data-sku="LP-CUSTOM-SHOP-59"
+           data-name="Custom Shop Les Paul"
+           data-category="Electric Guitars"
+           data-price="3150.00"
+           data-currency="USD">
+        
+        <div class="space-y-4">
+          <div class="h-56 bg-slate-950 rounded-xl flex items-center justify-center relative overflow-hidden group">
+            <i class="ph-duotone ph-guitar text-9xl text-brand-amber/70 group-hover:scale-105 transition duration-300"></i>
+            <span class="absolute top-3 left-3 bg-slate-900/90 text-slate-300 text-[10px] px-2.5 py-1 rounded border border-brand-border font-mono">
+              SKU: LP-CUSTOM-SHOP-59
+            </span>
+            <span class="absolute top-3 right-3 bg-brand-amber/10 text-brand-amber text-[10px] font-bold px-2.5 py-1 rounded border border-brand-amber/20">
+              Limited Edition
+            </span>
+          </div>
+
+          <div>
+            <span class="text-[10px] uppercase tracking-wider text-brand-amber font-bold">Electric Guitars</span>
+            <h2 class="font-serif text-2xl font-bold text-slate-100 mt-0.5">Custom Shop Les Paul</h2>
+            <p class="text-xs text-slate-400 leading-relaxed mt-2">
+              Carved AAA Flame Maple top over solid Mahogany back, PAF-style humbucking pickups, and '59 vintage neck profile. Exceptional sustain and rich harmonic depth.
+            </p>
+          </div>
+
+          <div class="flex items-center space-x-2 text-xs text-brand-gold">
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star"></i>
+            <i class="ph-fill ph-star-half"></i>
+            <span class="text-slate-400 ml-1">(4.8 / 31 reviews)</span>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-brand-border flex items-center justify-between">
+          <div>
+            <span class="block text-[10px] text-slate-500 uppercase tracking-wider font-semibold">Price</span>
+            <span class="text-2xl font-bold text-brand-gold">$3,150.00</span>
+          </div>
+          <div class="flex space-x-2">
+            <button class="btn-view-details bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-4 py-2.5 rounded-xl font-medium transition"
+                    data-product-id="prod_lespaul_custom">
+              View Details
+            </button>
+            <button class="btn-add-to-cart bg-gradient-to-r from-brand-gold to-brand-amber hover:opacity-90 text-black text-xs px-4 py-2.5 rounded-xl font-bold transition flex items-center space-x-1.5 shadow-lg shadow-brand-gold/10"
+                    data-product-id="prod_lespaul_custom"
+                    data-sku="LP-CUSTOM-SHOP-59"
+                    data-name="Custom Shop Les Paul"
+                    data-price="3150.00">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black/80 border-t border-brand-border mt-auto py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-2">
+      <p>&copy; 2026 Axe & Amp Guitars Inc. Custom Shop Demo Site.</p>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- INSERT YOUR CUSTOM EVENT TRACKING JAVASCRIPT / LISTENERS HERE     -->
+  <!-- ================================================================= -->
+
+</body>
+</html>
