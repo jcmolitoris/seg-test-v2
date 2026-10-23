@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Players Club Registration | Axe & Amp Guitars</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#D4AF37',
+              amber: '#E67E22',
+              dark: '#0D0E11',
+              card: '#16181E',
+              border: '#2A2D37'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- ================================================================= -->
+  <!-- INSERT YOUR SEGMENT ANALYTICS.JS SNIPPET HERE MANUALLY           -->
+  <!-- ================================================================= -->
+
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-gold selection:text-black">
+
+  <!-- Main Navigation Bar -->
+  <nav class="bg-brand-card/90 border-b border-brand-border sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-amber to-brand-gold flex items-center justify-center text-black font-serif text-xl font-bold shadow-lg shadow-brand-gold/10">
+            <i class="ph-bold ph-guitar"></i>
+          </div>
+          <div>
+            <span class="font-serif text-lg font-bold tracking-wider text-slate-100 block leading-none">AXE & AMP</span>
+            <span class="text-[10px] tracking-widest text-brand-gold font-semibold uppercase">Custom Guitars</span>
+          </div>
+        </a>
+
+        <div class="flex items-center space-x-2 sm:space-x-6 text-sm font-medium">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-slate-400 hover:text-slate-100 transition">
+            Home
+          </a>
+          <a href="collection.html" class="px-3 py-2 rounded-lg text-slate-400 hover:text-slate-100 transition">
+            Guitars Collection
+          </a>
+          <a href="register.html" class="px-3 py-2 rounded-lg text-brand-gold bg-slate-800/80 font-semibold border border-brand-gold/30">
+            Register Account
+          </a>
+        </div>
+
+        <div>
+          <a href="collection.html" class="bg-brand-gold hover:bg-amber-500 text-black font-bold px-4 py-2 rounded-xl text-xs transition">
+            Shop Collection
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Registration Form Container -->
+  <main class="flex-grow max-w-xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <div class="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-10 space-y-6 shadow-2xl">
+      
+      <div class="text-center space-y-2">
+        <div class="w-12 h-12 bg-brand-gold/10 border border-brand-gold/20 text-brand-gold rounded-full flex items-center justify-center mx-auto text-xl">
+          <i class="ph-bold ph-user-plus"></i>
+        </div>
+        <h1 class="font-serif text-2xl font-bold text-slate-100">Join the Players Club</h1>
+        <p class="text-xs text-slate-400">Create an account to track custom shop builds and receive private drop invites.</p>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="user-registration-form" class="space-y-4">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="first-name" class="block text-xs font-medium text-slate-300 mb-1">First Name</label>
+            <input type="text" id="first-name" name="firstName" required placeholder="Jimi" 
+                   class="w-full bg-slate-900 border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-brand-gold transition">
+          </div>
+
+          <div>
+            <label for="last-name" class="block text-xs font-medium text-slate-300 mb-1">Last Name</label>
+            <input type="text" id="last-name" name="lastName" required placeholder="Hendrix" 
+                   class="w-full bg-slate-900 border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-brand-gold transition">
+          </div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="jimi.hendrix@example.com" 
+                 class="w-full bg-slate-900 border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-brand-gold transition">
+        </div>
+
+        <div>
+          <label for="guitar-style" class="block text-xs font-medium text-slate-300 mb-1">Preferred Playing Style</label>
+          <select id="guitar-style" name="preferredStyle" 
+                  class="w-full bg-slate-900 border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-brand-gold transition">
+            <option value="Electric Rock / Blues">Electric Rock / Blues</option>
+            <option value="Acoustic Fingerstyle">Acoustic Fingerstyle</option>
+            <option value="Jazz Fusion">Jazz Fusion</option>
+            <option value="Heavy Metal">Heavy Metal</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="password" class="block text-xs font-medium text-slate-300 mb-1">Account Password</label>
+          <input type="password" id="password" name="password" required placeholder="••••••••••••" 
+                 class="w-full bg-slate-900 border border-brand-border rounded-xl px-3.5 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-brand-gold transition">
+        </div>
+
+        <button type="submit" id="btn-submit-registration"
+                class="w-full bg-gradient-to-r from-brand-gold to-brand-amber text-black font-bold py-3 rounded-xl text-xs hover:opacity-90 transition shadow-lg shadow-brand-gold/10 flex items-center justify-center space-x-2 mt-2">
+          <i class="ph-bold ph-check"></i>
+          <span>Create Players Club Account</span>
+        </button>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black/80 border-t border-brand-border mt-auto py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500 space-y-2">
+      <p>&copy; 2026 Axe & Amp Guitars Inc. Custom Shop Demo Site.</p>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- INSERT YOUR CUSTOM EVENT TRACKING JAVASCRIPT / LISTENERS HERE     -->
+  <!-- ================================================================= -->
+
+</body>
+</html>
